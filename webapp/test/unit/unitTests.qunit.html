@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unit tests for VAEES Libraries</title>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+		<meta charset="UTF-8">
+		
+
+		<script id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.ushell"
+			data-sap-ui-resourceroots='{
+				"vslibs.ui5ThemeManager": "../../ui5ThemeManager",
+				"test.unit": "./"
+			}'>
+		</script>
+		
+		<!--<script src="/resources/sap/ui/test/starter/createSuite.js"
+					data-sap-ui-testsuite="test-resources/testsuite.qunit"></script>-->
+					
+		<link rel="stylesheet" type="text/css" href="/resources/sap/ui/thirdparty/qunit-2.css">	
+		<script src="/resources/sap/ui/thirdparty/qunit-2.js"></script>
+		<script src="/resources/sap/ui/qunit/qunit-junit.js"></script>
+		<script src="/resources/sap/ui/qunit/qunit-coverage.js"></script>
+		<script src="/resources/sap/ui/thirdparty/sinon.js"></script>
+		<script src="/resources/sap/ui/thirdparty/sinon-qunit.js"></script>
+
+		<script>
+			/*jQuery.sap.require("sap.ui.qunit.qunit-2-css");
+			jQuery.sap.require("sap.ui.thirdparty.qunit-2");
+			jQuery.sap.require("sap.ui.qunit.qunit-junit");
+			//jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+			//jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+			jQuery.sap.require("sap.ui.thirdparty.sinon-4");
+			jQuery.sap.require("sap.ui.thirdparty.sinon-qunit");
+
+			QUnit.config.autostart = false;*/
+
+			sap.ui.require(
+				["test/unit/allTests"],
+					function () {
+						QUnit.start();
+					}
+			);
+		</script>
+
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+	</body>
+</html>
