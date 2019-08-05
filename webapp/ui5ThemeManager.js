@@ -10,6 +10,7 @@ sap.ui.define([], function () {
 		},
 		
 		getUI5ThemeFromDB: function (sSupplierId) {
+			console.log("Gerrit Test");
 			return jQuery.ajax({
 				url: this.themeServiceUrl,
 				contentType: "application/json",
